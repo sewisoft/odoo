@@ -6,7 +6,7 @@
 # Güven YILMAZ <guvenyilmaz@outlook.com.tr>, 2016
 # Ediz Duman <neps1192@gmail.com>, 2016
 # Murat Kaplan <muratk@projetgrup.com>, 2016
-# Martin Trigaux <mat@odoo.com>, 2016
+# Martin Trigaux, 2016
 # Saban Yildiz <sabany@projetgrup.com>, 2016
 # Ramiz Deniz Öner <deniz@denizoner.com>, 2016
 # tanerhasret <tanerhasret@gmail.com>, 2016
@@ -17,13 +17,14 @@
 # cagri erarslan <cagri.erarslan@mechsoft.com.tr>, 2016
 # selim kartal <kartalselim37@gmail.com>, 2016
 # Emre Akayoğlu <emre.akayoglu@mechsoft.com.tr>, 2016
+# Umur Akın <umura@projetgrup.com>, 2018
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-18 14:21+0000\n"
-"PO-Revision-Date: 2017-07-18 14:21+0000\n"
-"Last-Translator: Emre Akayoğlu <emre.akayoglu@mechsoft.com.tr>, 2016\n"
+"POT-Creation-Date: 2017-11-30 14:34+0000\n"
+"PO-Revision-Date: 2017-11-30 14:34+0000\n"
+"Last-Translator: Umur Akın <umura@projetgrup.com>, 2018\n"
 "Language-Team: Turkish (https://www.transifex.com/odoo/teams/41243/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1532,6 +1533,11 @@ msgid "List displaying"
 msgstr ""
 
 #. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.address
+msgid "Log In"
+msgstr ""
+
+#. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid "Logo"
 msgstr "Logo"
@@ -1780,7 +1786,7 @@ msgstr "Ödeme Yöntemleri"
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
 msgid "Payment must be reconciled manually"
-msgstr ""
+msgstr "Ödeme elle uzlaştırılmalıdır"
 
 #. module: website_sale
 #: code:addons/website_sale/controllers/main.py:758
@@ -1804,7 +1810,7 @@ msgstr ""
 #: model:ir.ui.view,arch_db:website_sale.extra_info_option
 #: model:ir.ui.view,arch_db:website_sale.wizard_checkout
 msgid "Payment<span class=\"chevron\"/>"
-msgstr ""
+msgstr "Ödeme<span class=\"chevron\"/>"
 
 #. module: website_sale
 #: model:product.public.category,name:website_sale.Pen_Drive
@@ -2324,6 +2330,11 @@ msgid "Show pricelists to customers"
 msgstr "Fiyat Listelerini Müşteriye göster"
 
 #. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.address
+msgid "Sign Up"
+msgstr ""
+
+#. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_sale
 msgid "Size"
 msgstr "Boyut"
@@ -2666,7 +2677,7 @@ msgstr "Her müşteriye farklı fiyat ayarlaması için fiyat listeleri kullanma
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.cart_popover
 msgid "View Cart ("
-msgstr ""
+msgstr "Sepeti İncele ("
 
 #. module: website_sale
 #: model:ir.model.fields,field_description:website_sale.field_delivery_carrier_website_published
@@ -2848,7 +2859,7 @@ msgstr ""
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.order_state_message
 msgid "Your payment has been authorized."
-msgstr ""
+msgstr "Ödemeniz onaylandı."
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.order_state_message
@@ -2914,7 +2925,7 @@ msgstr ""
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.cart_popover
 msgid "items)"
-msgstr ""
+msgstr "kalem)"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner

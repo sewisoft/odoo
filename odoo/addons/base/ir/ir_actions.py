@@ -126,7 +126,7 @@ class IrActionsReportXml(models.Model):
     def _compute_report_sxw(self):
         for report in self:
             if report.report_rml:
-                self.report_sxw = report.report_rml.replace('.rml', '.sxw')
+                report.report_sxw = report.report_rml.replace('.rml', '.sxw')
 
     def _report_content(self, name):
         data = self[name + '_content_data']
@@ -375,7 +375,7 @@ class IrActionsActWindowView(models.Model):
     _name = 'ir.actions.act_window.view'
     _table = 'ir_act_window_view'
     _rec_name = 'view_id'
-    _order = 'sequence'
+    _order = 'sequence,id'
 
     sequence = fields.Integer()
     view_id = fields.Many2one('ir.ui.view', string='View')
