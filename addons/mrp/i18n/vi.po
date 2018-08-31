@@ -78,7 +78,7 @@ msgstr "Chân bàn 18″ x 2½″"
 #: model:product.product,description:mrp.product_product_laptop_charger
 #: model:product.template,description:mrp.product_product_laptop_charger_product_template
 msgid "19v,5.5 x 2.5 mm Pin Type Adapter (Power Cord Included)"
-msgstr ""
+msgstr "Bộ chuyển đổi loại pin 19v, 5,5 x 2,5 mm (bao gồm dây nguồn)"
 
 #. module: mrp
 #: code:addons/mrp/models/mrp_bom.py:266
@@ -510,7 +510,7 @@ msgstr "Số giờ bị phong toả trong tháng trước"
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_procurement_order_bom_id
 msgid "BoM"
-msgstr ""
+msgstr "Định mức"
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_stock_move_bom_line_id
@@ -1253,6 +1253,7 @@ msgstr ""
 msgid ""
 "Inventory moves for which you must scan a lot number at this work order"
 msgstr ""
+"Dịch chuyển Kho mà bạn phải quét mã vạch một Lô hàng theo Lệnh sản xuất này"
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_workorder_is_user_working
@@ -1390,6 +1391,8 @@ msgid ""
 "Lines need to be deleted, but can not as you still have some quantities to "
 "consume in them. "
 msgstr ""
+"Các dòng cần phải được xóa, nhưng không được vì bạn vẫn có một số lượng để "
+"tiêu thụ trong chúng."
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_unbuild_location_id
@@ -1409,7 +1412,7 @@ msgstr "Địa điểm lưu trữ thành phẩm."
 #. module: mrp
 #: model:ir.ui.view,arch_db:mrp.view_mrp_config
 msgid "Logistics"
-msgstr ""
+msgstr "Tuyến hậu cần"
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_workcenter_productivity_loss_id_9376
@@ -2563,13 +2566,13 @@ msgstr "Lựa chọn"
 #: model:product.product,name:mrp.product_product_build_kit
 #: model:product.template,name:mrp.product_product_build_kit_product_template
 msgid "Self Build Kit"
-msgstr ""
+msgstr "Bán theo bộ"
 
 #. module: mrp
 #: model:product.product,description:mrp.product_product_build_kit
 #: model:product.template,description:mrp.product_product_build_kit_product_template
 msgid "Self Build kit."
-msgstr ""
+msgstr "Bán theo bộ."
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_bom_line_sequence
@@ -2797,6 +2800,8 @@ msgid ""
 "The operation where the components are consumed, or the finished products "
 "created."
 msgstr ""
+"Các hoạt động ở nơi mà các thành phần được tiêu thụ, hoặc các sản phẩm đã "
+"hoàn thành được tạo ra."
 
 #. module: mrp
 #: model:ir.model.fields,help:mrp.field_mrp_bom_routing_id
@@ -2892,6 +2897,9 @@ msgid ""
 "Time in minutes. Is the time used in manual mode, or the first time supposed"
 " in real time when there are not any work orders yet."
 msgstr ""
+"Thời gian tính bằng phút. Là thời gian được sử dụng trong chế độ thủ công "
+"hoặc lần đầu tiên được cho là trong thời gian thực khi chưa có bất kỳ đơn "
+"đặt hàng nào."
 
 #. module: mrp
 #: model:ir.ui.view,arch_db:mrp.mrp_production_workcenter_form_view_inherit
@@ -2936,6 +2944,11 @@ msgid ""
 "            operations will have different impacts on the costs of\n"
 "            manufacturing and planning depending on the available workload."
 msgstr ""
+"Để sản xuất hoặc lắp ráp sản phẩm, sử dụng nguyên liệu và\n"
+"             thành phẩm bạn cũng phải xử lý các hoạt động sản xuất.\n"
+"             Các hoạt động sản xuất thường được gọi là Lệnh sản xuất. Sự đa dạng\n"
+"             các hoạt động sẽ có tác động khác nhau đến chi phí của\n"
+"             sản xuất và lập kế hoạch tùy thuộc vào khối lượng công việc có sẵn."
 
 #. module: mrp
 #: model:ir.ui.view,arch_db:mrp.oee_search_view
@@ -3485,6 +3498,8 @@ msgid ""
 "'Performance'. Create one from the Manufacturing app, menu: Configuration / "
 "Productivity Losses."
 msgstr ""
+"Bạn cần xác định ít nhất một tổn thất năng suất trong danh mục 'Hiệu suất'. "
+"Tạo một ứng dụng từ menu Ứng dụng, menu: Cấu hình/Mất năng suất."
 
 #. module: mrp
 #: code:addons/mrp/models/mrp_workorder.py:349
@@ -3494,6 +3509,8 @@ msgid ""
 "'Productivity'. Create one from the Manufacturing app, menu: Configuration /"
 " Productivity Losses."
 msgstr ""
+"Bạn cần xác định ít nhất một tổn thất năng suất trong danh mục 'Năng suất'. "
+"Tạo một ứng dụng từ menu Ứng dụng, menu: Cấu hình/Mất năng suất."
 
 #. module: mrp
 #: code:addons/mrp/models/mrp_workorder.py:401
@@ -3503,6 +3520,9 @@ msgid ""
 "'Performance'. Create one from the Manufacturing app, menu: Configuration / "
 "Productivity Losses."
 msgstr ""
+"Bạn cần phải xác định ít nhất một mất năng suất không hoạt động trong danh "
+"mục 'Hiệu suất'. Tạo một ứng dụng từ menu Ứng dụng, menu: Cấu hình/Mất năng "
+"suất."
 
 #. module: mrp
 #: code:addons/mrp/wizard/mrp_product_produce.py:99
@@ -3574,7 +3594,7 @@ msgstr "phút"
 #. module: mrp
 #: model:ir.model,name:mrp.model_mrp_bom_line
 msgid "mrp.bom.line"
-msgstr ""
+msgstr "mrp.bom.line"
 
 #. module: mrp
 #: model:ir.model,name:mrp.model_mrp_config_settings
@@ -3594,7 +3614,7 @@ msgstr ""
 #. module: mrp
 #: model:ir.model,name:mrp.model_stock_scrap
 msgid "stock.scrap"
-msgstr ""
+msgstr "stock.scrap"
 
 #. module: mrp
 #: model:ir.ui.view,arch_db:mrp.mrp_production_workcenter_form_view_inherit

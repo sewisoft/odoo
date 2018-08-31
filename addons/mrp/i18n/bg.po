@@ -96,6 +96,9 @@ msgid ""
 "('availability', 'in', ('assigned', 'none')), ('state', 'not in', "
 "('confirmed','progress'))]}\">Raw materials not available!</span>"
 msgstr ""
+"<span class=\"label label-danger\" attrs=\"{'invisible': ['|', "
+"('availability', 'in', ('assigned', 'none')), ('state', 'not in', "
+"('confirmed','progress'))]}\">Суровини не са налични!</span>"
 
 #. module: mrp
 #: model:ir.ui.view,arch_db:mrp.mrp_workcenter_view
@@ -186,7 +189,7 @@ msgstr ""
 #. module: mrp
 #: model:ir.ui.view,arch_db:mrp.report_mrporder
 msgid "<strong>Partner Ref:</strong><br/>"
-msgstr "<strong>Партньор реф.:</strong><br/>"
+msgstr "<strong>Справка за контрагент:</strong><br/>"
 
 #. module: mrp
 #: model:ir.ui.view,arch_db:mrp.report_mrporder
@@ -366,6 +369,9 @@ msgid ""
 "Average delay in days to produce this product. In the case of multi-level "
 "BOM, the manufacturing lead times of the components will be added."
 msgstr ""
+"Средно забавяне в дни за производството на този продукт. В случай на "
+"многостепенна фактура за покупка на материали, ще бъдат добавени и сроковете"
+" за производство на компонентите."
 
 #. module: mrp
 #: model:ir.actions.report.xml,name:mrp.action_report_bom_price
@@ -662,7 +668,7 @@ msgstr "Цвят"
 #. module: mrp
 #: model:ir.model,name:mrp.model_res_company
 msgid "Companies"
-msgstr "Предприятия"
+msgstr "Компании"
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_bom_company_id
@@ -673,7 +679,7 @@ msgstr "Предприятия"
 #: model:ir.model.fields,field_description:mrp.field_mrp_workcenter_company_id
 #: model:ir.ui.view,arch_db:mrp.view_mrp_workcenter_search
 msgid "Company"
-msgstr "Фирма"
+msgstr "Компания"
 
 #. module: mrp
 #: model:ir.ui.view,arch_db:mrp.mrp_bom_component_tree_view
@@ -1075,12 +1081,13 @@ msgstr ""
 #. module: mrp
 #: model:ir.model.fields,help:mrp.field_ir_attachment_priority
 msgid "Gives the sequence order when displaying a list of tasks."
-msgstr ""
+msgstr "Дава реда на последователност, когато показва списъка със задачи. "
 
 #. module: mrp
 #: model:ir.model.fields,help:mrp.field_mrp_workcenter_sequence
 msgid "Gives the sequence order when displaying a list of work centers."
 msgstr ""
+"Дава реда на подледователност, когато показвасписъка с работните центрове."
 
 #. module: mrp
 #: model:ir.model.fields,help:mrp.field_mrp_bom_line_sequence
@@ -1258,6 +1265,10 @@ msgid ""
 "materials.Set a location if you produce at a fixed location. This can be a "
 "partner location if you subcontract the manufacturing operations."
 msgstr ""
+"Дръжте мястото празно, ако производството Ви е разположено на терена, от "
+"който добивате суровините. Настройте локация, ако произвеждате на определено"
+" място. Това може да е местоположение на контрагент, в случай че възлагате "
+"подизпълнители за производствените операции."
 
 #. module: mrp
 #: model:ir.ui.view,arch_db:mrp.view_mrp_bom_filter
@@ -1495,7 +1506,7 @@ msgstr "Производствен срок за доставка"
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_config_settings_manufacturing_lead
 msgid "Manufacturing Lead Time *"
-msgstr ""
+msgstr "Manufacturing Lead Time *"
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_change_production_qty_mo_id
@@ -1506,13 +1517,13 @@ msgstr ""
 #: model:ir.ui.view,arch_db:mrp.mrp_unbuild_search_view
 #: model:ir.ui.view,arch_db:mrp.view_mrp_config
 msgid "Manufacturing Order"
-msgstr "Нареждане за производство"
+msgstr "Поръчка за производство"
 
 #. module: mrp
 #: code:addons/mrp/models/procurement.py:87
 #, python-format
 msgid "Manufacturing Order <em>%s</em> created."
-msgstr "Нареждане за производство <em>%s</em>."
+msgstr "Поръчка за производство <em>%s</em>."
 
 #. module: mrp
 #: model:ir.actions.act_window,name:mrp.act_product_mrp_production
@@ -1530,22 +1541,22 @@ msgstr "Нареждане за производство <em>%s</em>."
 #: model:ir.ui.view,arch_db:mrp.view_production_graph
 #: model:ir.ui.view,arch_db:mrp.view_production_pivot
 msgid "Manufacturing Orders"
-msgstr "Нареждания за производство"
+msgstr "Поръчки за производство"
 
 #. module: mrp
 #: model:ir.ui.view,arch_db:mrp.view_mrp_production_filter
 msgid "Manufacturing Orders which are currently in production."
-msgstr ""
+msgstr "Поръчки за производство, действащи понастоящем"
 
 #. module: mrp
 #: model:ir.ui.view,arch_db:mrp.view_mrp_production_filter
 msgid "Manufacturing Orders which are in confirmed state."
-msgstr ""
+msgstr "Поръчки за производство в потвърдено състояние"
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_stock_warehouse_manu_type_id
 msgid "Manufacturing Picking Type"
-msgstr ""
+msgstr "Производствен пикинг вид"
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_bom_ready_to_produce
@@ -1556,7 +1567,7 @@ msgstr ""
 #. module: mrp
 #: model:ir.ui.view,arch_db:mrp.mrp_production_form_view
 msgid "Manufacturing Reference"
-msgstr ""
+msgstr "Производствена референция"
 
 #. module: mrp
 #: model:ir.actions.act_window,help:mrp.mrp_production_action
@@ -1581,7 +1592,7 @@ msgstr "Шаблон"
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_config_settings_module_mrp_mps
 msgid "Master Production Schedule"
-msgstr ""
+msgstr "Главен производствен график"
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_message_message
@@ -1672,7 +1683,7 @@ msgstr "Следваща операция"
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_workorder_next_work_order_id
 msgid "Next Work Order"
-msgstr ""
+msgstr "Следваща работна поръчка"
 
 #. module: mrp
 #: code:addons/mrp/models/procurement.py:90
@@ -1708,6 +1719,8 @@ msgstr ""
 msgid ""
 "No need for Master Production Schedule as products have short lead times"
 msgstr ""
+"Няма нужда от Главен производствен трафик, тъй като продуктите са с кратки "
+"срокове на лийдовете"
 
 #. module: mrp
 #: selection:mrp.config.settings,module_mrp_plm:0
@@ -1923,13 +1936,13 @@ msgstr ""
 #: model:ir.model.fields,field_description:mrp.field_mrp_bom_picking_type_id
 #: model:ir.model.fields,field_description:mrp.field_mrp_production_picking_type_id
 msgid "Picking Type"
-msgstr ""
+msgstr "Вид пикинг"
 
 #. module: mrp
 #: model:ir.actions.server,name:mrp.production_order_server_action
 #: model:ir.ui.view,arch_db:mrp.mrp_workcenter_kanban
 msgid "Plan Orders"
-msgstr ""
+msgstr "Планирайте поръчки"
 
 #. module: mrp
 #: model:ir.ui.view,arch_db:mrp.stock_production_type_kanban
@@ -2294,6 +2307,9 @@ msgid ""
 "Recursion error!  A product with a Bill of Material should not have itself "
 "in its BoM or child BoMs!"
 msgstr ""
+"Рекурсивна грешка!  Продукт с фактура за покупка на материали не би трябвало"
+" да съдържа в себе си фактура за покупка на материали или второстепенни "
+"фактури за покупка на материали!"
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_bom_code
@@ -2301,7 +2317,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:mrp.field_mrp_routing_code
 #: model:ir.model.fields,field_description:mrp.field_mrp_unbuild_name
 msgid "Reference"
-msgstr "Означение"
+msgstr "Референция"
 
 #. module: mrp
 #: sql_constraint:mrp.production:0
@@ -2764,7 +2780,7 @@ msgstr ""
 #. module: mrp
 #: model:ir.model,name:mrp.model_stock_picking_type
 msgid "The picking type determines the picking view"
-msgstr ""
+msgstr "Видът пикинг определя пикинг изгледа"
 
 #. module: mrp
 #: sql_constraint:mrp.production:0
@@ -2799,10 +2815,11 @@ msgid ""
 "show a load of 100% for this phase by default, but if we put a efficiency of"
 " 200%, then his load will only be 50%."
 msgstr ""
-"Това поле показва ефикасността на ресурса при извършване на задачи. Например"
-" ресурсът е разпределен на фаза от 5 дни с 5 задачи зачислени на нея. е "
-"покаже натоварване 100% за тази фаза, но е сложи ефикасност 200%, когато "
-"натоварването му е само 50%."
+"Това поле показва ефикасността на източника при извършване на задачи. "
+"Например източник, поставен самостоятелно във фаза от 5 дни с 5 разпределени"
+" към него задачи, ще покаже по подразбиране натоварване от 100% за тази "
+"фаза, но ние залагаме ефикасност 200% и тогава натоварването му ще бъде само"
+" 50%."
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_workcenter_time_ids
@@ -2897,7 +2914,7 @@ msgid ""
 msgstr ""
 "За да произведете или сглобите продукти, и да използвате суровини и \n"
 "            готови изделия, Вие трябва да следите производствените операции.\n"
-"            Производствените операции често се наричат Работни Карти. Различните\n"
+"            Производствените операции често се наричат Работни поръчки. Различните\n"
 "            операции ще имат различно въздействие върху себестойността\n"
 "            на  производството и планирайки според свободните производствени мощности."
 
@@ -2920,7 +2937,7 @@ msgstr "Обща стойност на суровините"
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_workcenter_workorder_late_count
 msgid "Total Late Orders"
-msgstr ""
+msgstr "Общо последни поръчки"
 
 #. module: mrp
 #: model:ir.ui.view,arch_db:mrp.mrp_production_tree_view
@@ -3122,6 +3139,11 @@ msgid ""
 " picking type. That allows to define procurement rules which trigger "
 "different manufacturing orders with different BoMs. "
 msgstr ""
+"Когато дадена доставка има маршрут ‘продукция’ с набор от пикинг видове, тя "
+"ще се опита да създаде поръчка за производството на този продукт, "
+"използвайки фактура за покупка на материали на същия вид пикинг. Това "
+"позволява да се определят правила за доставки, които задействат различни "
+"поръчки за производство с различни фактури за покупки на материали."
 
 #. module: mrp
 #: model:ir.ui.view,arch_db:mrp.mrp_bom_form_view
@@ -3208,6 +3230,10 @@ msgid ""
 "                considered as units for task assignation as well as capacity\n"
 "                and planning forecast."
 msgstr ""
+"Работните центрове Ви позволяват да създадете и управлявате производствени\n"
+"                звена. Те се състоят от работници и/или машини, които \n"
+"                се разглеждат като звена за разпределяне на задачи, както и за прогнози, свързани с капацитета\n"
+"                и планировката."
 
 #. module: mrp
 #: model:ir.ui.view,arch_db:mrp.mrp_production_workcenter_form_view_inherit
@@ -3280,10 +3306,10 @@ msgid ""
 "            manufacturing order, the MO is automatically done and the related\n"
 "            products are produced."
 msgstr ""
-"Работна Карта е списъкът с операции за ъзвършване във всяко\n"
-"            производствено нареждане. Веднъж започнали работа по\n"
-"            производствено нареждане, производственото нареждане автоматично\n"
-"            се отбелязва като стартирано. Когато приключите последната операция от            производствено нареждане, ПН-то автоматично се приключваи съответните \n"
+"Работни поръчки ще рече списъкът с операции, които трябва да се извършат във всяка\n"
+"            поръчка за производство. Щом стартирате първата работна поръчка на\n"
+"            поръчка за производство, последната автоматично\n"
+"            се отбелязва като стартирана. Когато приключите последната операция от            поръчката за производство, ПН-то автоматично се приключва и съответните \n"
 "            изделия се произвеждат."
 
 #. module: mrp
