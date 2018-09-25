@@ -1217,7 +1217,7 @@ msgstr "Slutdato er registreret"
 #: model:ir.ui.view,arch_db:event.view_registration_search
 #: model:ir.ui.view,arch_db:event.view_report_event_registration_search
 msgid "Event"
-msgstr "Begivenhed"
+msgstr "Arrangement"
 
 #. module: event
 #: model:ir.actions.report.xml,name:event.report_event_event_badge
